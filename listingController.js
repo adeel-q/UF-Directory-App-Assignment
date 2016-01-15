@@ -1,3 +1,5 @@
+//Authors: Adeel Qureshi, Steven Williams
+
 angular.module('listings').controller('ListingsController', ['$scope', 'Listings', 
   function($scope, Listings) {
     $scope.listings = Listings;
@@ -25,6 +27,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
 	};
     $scope.showDetails = function(index) {
 		$scope.detailedInfo = $scope.listings[index];
+		console.log($scope.detailedInfo);
 	};
   }
 ]);
